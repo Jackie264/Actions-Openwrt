@@ -15,7 +15,7 @@
 
 # Add a feed source
 echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
-echo 'src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2' >>feeds.conf.default
+#echo 'src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2' >>feeds.conf.default
 echo 'src/gz dllkids https://op.dllkids.xyz/packages/arm_cortex-a7_neon-vfpv4' >>feeds.conf.default
 echo 'src/gz openwrt_kiddin9 https://dl.openwrt.ai/latest/packages/arm_cortex-a7_neon-vfpv4/kiddin9' >>feeds.conf.default
 echo 'src/gz immortalwrt https://downloads.immortalwrt.org/releases/23.05.3/packages/arm_cortex-a7_neon-vfpv4/base/' >>feeds.conf.default
