@@ -21,7 +21,7 @@ echo 'src/gz openwrt_kiddin9 https://dl.openwrt.ai/latest/packages/arm_cortex-a7
 echo 'src/gz immortalwrt https://downloads.immortalwrt.org/releases/23.05.3/packages/arm_cortex-a7_neon-vfpv4/base/' >>feeds.conf.default
 
 git clone https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
-git clone https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
+git clone https://github.com/kiddin9/openwrt-packages.git package/openwrt-packages
 #git clone https://github.com/kiddin9/openwrt-packages/tree/master/fullconenat-nft package/fullconenat-nft
 #git clone https://github.com/kiddin9/openwrt-packages/tree/master/fullconenat package/fullconenat
 #git clone https://github.com/kiddin9/openwrt-packages/tree/master/luci-app-fullconenat package/luci-app-fullconenat
