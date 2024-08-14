@@ -57,6 +57,12 @@ jobs:
         git clone $REPO_URL -b $REPO_BRANCH openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
 
+    - name: Modify vermagic
+      run: |
+        cd openwrt
+        curl -s https://mirror-03.infra.openwrt.org/releases/23.05.4/targets/ipq40xx/generic/openwrt-23.05.4-ipq40xx-generic.manifest | grep kernel | awk '{print $3}' | awk -F- '{print $3}' > vermagic
+        sed -i '121s/^/#/g' ./include/kernel-defaults.mk
+
     - name: Load custom feeds
       run: |
         [ -e $FEEDS_CONF ] && mv $FEEDS_CONF openwrt/feeds.conf.default
