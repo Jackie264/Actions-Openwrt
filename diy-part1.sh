@@ -21,3 +21,4 @@ echo 'src-git small https://github.com/kenzok8/small' >>feeds.conf.default
 # echo 'src-git nft-fullcone https://github.com/fullcone-nat-nftables/nft-fullcone' >>feeds.conf.default
 git clone https://github.com/fullcone-nat-nftables/nft-fullcone package/nft-fullcone
 git clone https://github.com/xiaorouji/openwrt-passwall2 package/luci-app-passwall2
+git clone https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
